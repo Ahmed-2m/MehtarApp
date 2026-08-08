@@ -12,21 +12,13 @@ class MehtarApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'محتار',
-      debugShowCheckedModeBanner: false, // لإخفاء شريط التجربة الإعلاني
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.orange,
-        scaffoldBackgroundColor: const Color(
-          0xFFF8F9FA,
-        ), // لون خلفية مريح وأنيق
+        scaffoldBackgroundColor: const Color(0xFFF8F9FA),
+        useMaterial3: true,
       ),
-      home: const Scaffold(
-        body: Center(
-          child: Text(
-            'تطبيق محتار 🍕',
-            style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
-          ),
-        ),
-      ),
+      home: const QuizScreen(), // 👈 هنا التعديل المهم لفتح شاشة الأسئلة مباشرة
     );
   }
 }
