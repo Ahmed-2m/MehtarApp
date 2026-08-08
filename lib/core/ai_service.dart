@@ -3,8 +3,7 @@ import 'package:http/http.dart' as http;
 
 class AIService {
   // ملاحظة: يمكنك وضع API Key الخاص بك هنا لاحقاً
-  static const String _apiKey =
-      'AQ.Ab8RN6L-ARCVd1W2_sEQGtzvr4klEDIZ0nXM3-gccOzoaADm0Q';
+  static const String _apiKey = 'YOUR_GEMINI_API_KEY';
   static const String _baseUrl =
       'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
 
