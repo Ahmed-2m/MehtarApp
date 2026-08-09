@@ -1,16 +1,31 @@
-# mehtar_app
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# MehtarApp - تطبيق محتار 🎯
+تطبيق محتار هو حل ذكي وممتع للمشكلة الأسبوعية أو اليومية التي يواجهها الجميع: وش ناكل اليوم؟
+يقوم التطبيق بحل هذه الحيرة بطريقة تفاعلية وممتعة تعتمد على عجلة الحظ، الموقّع الجغرافي الفعلي للمستخدم، والذكاء الاصطناعي لاقتراح أشهى الأطباق والمطاعم القريبة منك داخل المملكة العربية السعودية.
+## أبرز مميزات التطبيق
+ 1. عجلة الحظ التفاعلية
+   طريقة ممتعة وكسر للروتين لاختيار الوجبة، مع إمكانية تجديد قائمة الوجبات بضغطة زر.
+ 2. ربط مباشر بالموقع الجغرافي
+   التطبيق يجلب موقعك الحالي بدقة عبر خدمات GPS للبحث عن المطاعم التي تقدم الوجبة الفائزة في منطقتك الفعالية.
+ 3. توصيات ذكية للمطاعم
+   استخدام الذكاء الاصطناعي لتحليل الوجبة المختارة ورشح أفضل المطاعم القريبة منك مع تقييماتها وتفاصيلها.
+ 4. واجهة عربية عصرية
+   تصميم بسيط ومريح للعين مع هوية سعودية شبابية وتفاعلية لسهولة الاستخدام.
+## التقنيات المستخدمة
+ * Flutter & Dart لتطوير واجهات التطبيق والأداء.
+ * Geolocator & Geocoding لجلب الموقع الجغرافي وعناوين المطاعم.
+ * OpenRouter API لربط خدمات الذكاء الاصطناعي واقتراح التوصيات.
+ * Flutter Fortune Wheel لبناء عجلة الحظ التفاعلية.
+ * Flutter Dotenv لإدارة مفاتيح API والحفاظ على الأمان.
+## طريقة تشغيل المشروع محلياً
+إذا أردت تجربة المشروع أو التعديل عليه على جهازك:
+ 1. انسخ المستودع على جهازك:
+   git clone https://github.com/Ahmed-2m/MehtarApp.git
+ 2. ادخل إلى مجلد المشروع:
+   cd MehtarApp
+ 3. قم بتثبيت الحزم والمكتبات:
+   flutter pub get
+ 4. أنشئ ملف باسم .env في المجلد الرئيسي وأضف فيه مفتاح API الخاص بك:
+   OPENROUTER_API_KEY=your_api_key_here
+ 5. شغل التطبيق:
+   flutter run
+تم تطوير التطبيق بواسطة أحمد لتسهيل تجربة اختيار الطعام يومياً!
